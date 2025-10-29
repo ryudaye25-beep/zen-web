@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Top Up Mobile Legends</title>
+<style>
+  /* Reset dan font */
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b021c; /* Hitam gelap */
+    color: #dcd6f7; /* Ungu terang */
+  }
+
+  /* Header */
+  header {
+    background-color: #1d0e3f; /* Ungu tua */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #b388ff; /* Ungu cerah */
+  }
+
+  header .menu {
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  header .menu button {
+    background-color: transparent;
+    border: none;
+    color: #b388ff;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  header .menu button:hover {
+    background-color: #6d4caa;
+    border-radius: 5px;
+  }
+
+  /* Banner */
+  .banner {
+    display: flex;
+    background: linear-gradient(90deg, #301934 30%, #4d3f8a 100%);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    color: #fff;
+  }
+
+  .banner img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  .banner-content {
+    flex: 1;
+  }
+
+  .banner-content h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #b388ff;
+  }
+
+  .banner-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+
+  .btn-buy {
+    background-color: #b388ff;
+    color: #0b021c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-buy:hover {
+    background-color: #6d4caa;
+    color: #fff;
+  }
+
+  /* Info/service bar */
+  .info-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1d0e3f;
+    padding: 20px 10px;
+    margin: 0 20px 20px;
+    border-radius: 10px;
+    color: #b388ff;
+    font-size: 14px;
+  }
+
+  .info-bar div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Form section */
+  .form-container {
+    background-color: #2c1a63;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    color: #dcd6f7;
+  }
+
+  .form-container h2 {
+    margin-bottom: 15px;
+    color: #b388ff;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #463a92;
+    color: #fff;
+  }
+
+  input[type="text"]::placeholder {
+    color: #b7aef4;
+  }
+
+  /* Diamond selection */
+  .diamond-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .diamond-card {
+    background-color: #1d0e3f;
+    flex: 1 1 45%;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .diamond-card:hover, .diamond-card.selected {
+    background-color: #6d4caa;
+  }
+
+  .diamond-card h3 {
+    margin-top: 0;
+    color: #e1cefc;
+  }
+
+  .diamond-card p {
+    font-weight: bold;
+    color: #b388ff;
+  }
+
+  /* Button order */
+  .btn-order {
+    display: block;
+    width: 100%;
+    background-color: #b388ff;
+    color: #0b021c;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-order:hover {
+    background-color: #6d4caa;
+    color: #fff;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">RyuStore</div>
+  <nav class="menu">
+    <button>Aman</button>
+    <button>Murah</button>
+    <button>Terpercaya</button>
+    <button>Diskon</button>
+  </nav>
+</header>
+
+<section class="banner">
+  <img src="ryustore.jpg" alt="Mobile Legends" />
+  <div class="banner-content">
+    <h1>Top up MLBB - Region Indonesia</h1>
+    <p>Top up Mobile Legend hanya untuk kalian yang ada di Indonesia. Lebih cepat, lebih akurat meskipun event berlangsung.</p>
+    <button class="btn-buy">Beli Sekarang!</button>
+  </div>
+</section>
+
+<div class="info-bar">
+  <div><span>⏳</span> Jaminan Layanan 24 Jam</div>
+  <div><span>✔</span> Pembayaran Aman & Terpercaya</div>
+  <div><span>⚡</span> Proses Cepat & Otomatis</div>
+</div>
+
+<div class="form-container">
+  <h2>1. Masukkan Data Akun</h2>
+  <label for="userID">ID</label>
+  <input type="text" id="userID" placeholder="Masukkan ID" />
+  <label for="server">Server</label>
+  <input type="text" id="server" placeholder="Masukkan Server" />
+
+  <h2>2. Pilih Nominal</h2>
+  <div class="diamond-options">
+    <div class="diamond-card" onclick="selectDiamond(this)">
+      <h3>55(50+5) Diamond</h3>
+      <p>Rp. 11.000,00</p>
+    </div>
+    <div class="diamond-card" onclick="selectDiamond(this)">
+      <h3>90(89+1) Diamond</h3>
+      <p>Rp. 29.876,00</p>
+    </div>
+    <div class="diamond-card" onclick="selectDiamond(this)">
+      <h3>Weekly Diamond Pass</h3>
+      <p>Rp. 27.999</p>
+    </div>
+    <div class="diamond-card" onclick="selectDiamond(this)">
+      <h3>2x Weekly Diamond Pass</h3>
+      <p>Rp. 55.998</p>
+    </div>
+    <div class="diamond-card" onclick="selectDiamond(this)">
+      <h3>3x Weekly Diamond Pass</h3>
+      <p>Rp. 83.997</p>
+    </div>
+  </div>
+
+  <h2>3. Masukkan Jumlah Pembelian</h2>
+  <label for="amount">Jumlah</label>
+  <input type="text" id="amount" placeholder="Masukkan jumlah" />
+
+  <h2>4. Kode Promo</h2>
+  <label for="promoCode">Ketikan Kode Promo</label>
+  <input type="text" id="promoCode" placeholder="Masukkan Kode" />
+
+  <h2>5. Pilih Pembayaran</h2>
+  <select>
+    <option value="e-wallet">E-Wallet</option>
+    <option value="bank-transfer">Bank Transfer</option>
+    <option value="credit-card">Kartu Kredit</option>
+    <option value="cash">Kas</option>
+  </select>
+
+  <button class="btn-order">Pesan Sekarang!</button>
+</div>
+
+<script>
+  function selectDiamond(card) {
+    const cards = document.querySelectorAll('.diamond-card');
+    cards.forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+  }
+</script>
+
+</body>
+</html>
